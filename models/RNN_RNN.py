@@ -48,7 +48,10 @@ class RNN_RNN(BasicModule):
         # x:[N,L,O_in]
         out = []
         for index,t in enumerate(x):
-            t = t[:seq_lens[index],:]
+            try:
+                t = t[:seq_lens[index],:]
+            except ValueError:
+                continue
             t = torch.t(t).unsqueeze(0)
             out.append(F.max_pool1d(t,t.size(2)))
         
