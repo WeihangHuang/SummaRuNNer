@@ -199,7 +199,10 @@ def test():
             stop = start + doc_len
             prob = probs[start:stop]
             topk = min(args.topk,doc_len)
-            topk_indices = prob.topk(topk)[1].cpu().data.numpy()
+            try:
+            	topk_indices = prob.topk(topk)[1].cpu().data.numpy()
+            except:
+            	continue
             topk_indices.sort()
             doc = batch['doc'][doc_id].split('\n')[:doc_len]
             hyp = [doc[index] for index in topk_indices]
