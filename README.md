@@ -59,13 +59,7 @@ python main.py -batch_size 1 -predict -filename x.txt -load_dir checkpoints/RNN_
 |CNN-RNN|25.8|11.3|13.8|
 |Hierarchical Attn Net|26.0|11.4|13.8|
 
-### Blog
-
-+ [用PyTorch搭建抽取式摘要系统](http://mp.weixin.qq.com/s/9X77MPcQOQPwZaOVIVfo9Q)
-
 ### Download Data:  
-
-+ 百度云:[https://pan.baidu.com/s/1LV3iuuH1NjxuAJd0iz14lA](https://pan.baidu.com/s/1LV3iuuH1NjxuAJd0iz14lA) 密码:`ivzl`
 
 + Google Driver:[data.tar.gz](https://drive.google.com/file/d/1JgsboIAs__r6XfCbkDWgmberXJw8FBWE/view?usp=sharing)
 
